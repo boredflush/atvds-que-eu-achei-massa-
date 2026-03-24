@@ -58,7 +58,6 @@ INSERT INTO Endereco (logra, cidade, numero, cep) VALUES
 ('Rua B', 'Fortaleza', 321, 60000000);
 
 # -- Professores
-# -- Professores
 INSERT INTO Professor (nome, mat, freq, salario, id_endereco) VALUES
 ('Carlos Silva', 1001, 40, 1100, 1),
 ('Ana Souza', 1002, 38, 1500, 2),
