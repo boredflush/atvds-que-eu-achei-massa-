@@ -1,7 +1,7 @@
 CREATE DATABASE Educacao;
  
 USE Educacao;
- 
+
 CREATE TABLE Endereco (
 	id int auto_increment primary key,
     logra varchar(80),
@@ -13,6 +13,7 @@ CREATE TABLE Endereco (
 CREATE TABLE Professor (
 	id int auto_increment primary key,
     nome varchar(80),
+    salario int,
     mat int,
     freq int,
     id_endereco int,
@@ -38,10 +39,10 @@ foreign key (id_aluno) references aluno(id),
 foreign key (id_professor) references professor(id));
  
 # ---------- Divisor de Águas ----------
- 
+
 SELECT * FROM endereco;
 SELECT * FROM aluno where id = 2;
-SELECT * FROM professor;
+SELECT * FROM professor order by nome;
 SELECT * FROM colegio;
  
 update endereco set logra = 'Rua Antônio Falcão' where id = 3;
@@ -57,6 +58,7 @@ INSERT INTO Endereco (logra, cidade, numero, cep) VALUES
 # -- Professores
 INSERT INTO Professor (nome, mat, freq, id_endereco) VALUES
 ('Carlos Silva', 1001, 40, 1),
+('bbbbbb',1111,55,3)
 ('Ana Souza', 1002, 38, 2),
 ('Carla Sá', 1003, 40, 1);
  
