@@ -18,17 +18,19 @@ int main() {
 
         printf("o resultado é %f",valor1+valor2);
     }
-       if (op == '-'){
+    else if (op == '-'){
 
         printf("o resultado é %f",valor1-valor2);
        }
-          if (op == '/'){
+     else if (op == '/'){
 
         printf("o resultado é %f",valor1/valor2);
           }
-             if (op == '*'){
+      else if (op == '*'){
 
         printf("o resultado é %f",valor1*valor2);
              }
+    else{    
+            printf("ixe deu ruim");}
     return 0;
 }
