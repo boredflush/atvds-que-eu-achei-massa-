@@ -3,25 +3,23 @@
 
 int main() {
 
-int num,imp;
+int num,impar=0,cont=1;
     
-    while(cont<=50){
+ for(cont=1;cont<=50;cont++){
 
         printf("digite 50 numeros");
         scanf("%d",&num);
+    
+    if(num %2 !=0){
+     
+      impar+=num;
         
-     cont=cont+1;
-  
     }
-    
-    //calcular soma dos numeros impares
+ }
+   printf("a soma dos impares foi: %d",impar);
 
-    imp=num %2 = 0;
-
-    printf("a media total foi: %d",imp);
     
     
-    
-
+   
     return 0;
 }
