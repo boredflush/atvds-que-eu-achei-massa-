@@ -3,7 +3,7 @@
 
 int main() {
   
-    int idade=0,sexo=0,opiniao=0,cont,md1,md2,md3;
+    int idade=0,sexo=0,opiniao=0,cont,mle=0,md2=0,md3=0;
 
     
     for(cont=1;cont<=2;cont++){
@@ -17,13 +17,18 @@ int main() {
     printf("Digite opiniao (1-não gostei/2-esperava mais/3-vale o ingresso/4-Exelente) :");
     scanf("%d",&opiniao);
     
-    if(sexo==1&&opiniao==4){
+    if(sexo==1){
     
-    md1=sexo+opiniao/2;
+    sexo++;
+    }
+    if(mle==4){
+        mle++;
         
-        printf("total de mulheres que acharam o filme excelente foi :%d",md1);
-    
-}
-    
+    }
+
+    md1= mle/15;
+      
+    printf("total de mulheres que acharam o filme excelente foi :%d",md1);
     return 0;
+}
 }
