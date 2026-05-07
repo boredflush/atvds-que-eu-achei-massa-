@@ -14,7 +14,7 @@ int main() {
   
   //for que vai repetir 1000 vezes 1 pra cada aluno//
   
- for (p=1; p<=3;p++){
+ for (p=1; p<=1000;p++){
   
   //salario dos alunos//
   
@@ -38,7 +38,7 @@ int main() {
  }
      //calculo dos maiores salarios e menores//
      
-      for (p=1; p<=3;p++){
+      for (p=1; p<=1000;p++){
           
             if (p == 1) {
         maior = tsalario[1];
@@ -57,7 +57,7 @@ int main() {
           
       }
       
-      for(p=1; p<=3;p++){
+      for(p=1; p<=1000;p++){
           
           soma_salarios = soma_salarios + tsalario[p];
           soma_filhos =soma_filhos + tfilhos[p];
@@ -68,9 +68,9 @@ int main() {
 
       //percentual de pais de dois ou mais////////////////////////////////////////////////
       
-    percentual = (habit2fi / 3.0) * 100;
-    mediasal =soma_salarios / 3.0;
-    mediaf=soma_filhos/3.0;
+    percentual = (habit2fi / 1000.0) * 100;
+    mediasal =soma_salarios / 1000.0;
+    mediaf=soma_filhos/1000.0;
 //////os prints//////////////////////////////////////////////////////////////////
 
     
